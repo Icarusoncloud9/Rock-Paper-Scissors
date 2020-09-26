@@ -1,0 +1,27 @@
+{
+  "name": "rock-paper-scissors",
+  "version": "1.0.0",
+  "description": "The rock, paper, scissors game. Showing good coding practices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Icarusoncloud9/Rock-Paper-Scissors.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS",
+    "JSDOM",
+    "Testing",
+    "Exercise"
+  ],
+  "author": "Joaquin Melara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Icarusoncloud9/Rock-Paper-Scissors/issues"
+  },
+  "homepage": "https://github.com/Icarusoncloud9/Rock-Paper-Scissors#readme"
+}
