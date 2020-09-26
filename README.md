@@ -101,6 +101,7 @@ classDiagram
 class Lobby {
     <<interface>>
 
+    +Array onlinePlayers
     +Array availablePlayers
     +Array busyPlayers
 
@@ -146,10 +147,10 @@ class Game {
 }
 ```
 
-### HTML JS INTERFACE CLASS DIAGRAM
+### USER INTERFACE CLASS DIAGRAM
 ```mermaid
 classDiagram
-class HtmlJsInterface {
+class UserInterface {
     <<service>>
 
     CreateNewPlayer()
