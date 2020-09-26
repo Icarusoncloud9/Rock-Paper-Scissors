@@ -73,19 +73,18 @@ class PlayerStatus {
 class Player {
     <<interface>>
 
+    +String name
     +Enum type
     +Enum choice
     +Enum status
-    +String name
     -Int score
     -String requestFrom
 
-    SetType(type)
+    GetName()
     SetChoice(choice)
     ResetChoice()
     SetStatus(status)
-    SetName(name)
-    GetName()
+    GetStatus()
     GetRequest(from)
     IncrementScore()
     ---
@@ -140,7 +139,6 @@ class Game {
     
     InitiateGame()
     RevealChoices()
-    ShowDraw()
     AwardPoint(player)
     CheckWinner()
     Rematch()
@@ -155,9 +153,9 @@ class HtmlJsInterface {
     <<service>>
 
     CreateNewPlayer()
-    UpdatePlayerNames()
-    UpdatePlayerScores()
-    UpdatePlayerAvailability()
+    SetPlayerNames()
+    SetPlayerScores()
+    SetPlayerAvailability()
     RevealPlayerChoices()
     ResetGame()
     SinglePlayer()
