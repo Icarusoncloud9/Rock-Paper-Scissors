@@ -31,6 +31,7 @@ Exercising good coding practices by creating a rock, paper, scissors game.
 - [ ] Will not permanently store user information as this is a proof of concept.
 
 ## APPLICATION UX FLOW
+![APP UX FLOW](docs/app-ux-workflow.png)
 ```mermaid
 journey
     title App UX Flow
@@ -52,6 +53,7 @@ journey
 
 ## CLASS DIAGRAMS
 ### PLAYER CLASS DIAGRAM
+![Player Class Diagram](docs/player-class-diagram.png)
 ```mermaid
 classDiagram
 class PlayerType {
@@ -96,11 +98,13 @@ Player ..> PlayerStatus
 ```
 
 ### LOBBY CLASS DIAGRAM
+![Lobby Class Diagram](docs/lobby-class-diagram.png)
 ```mermaid
 classDiagram
 class Lobby {
     <<interface>>
 
+    +Array onlinePlayers
     +Array availablePlayers
     +Array busyPlayers
 
@@ -109,6 +113,7 @@ class Lobby {
 ```
 
 ### REQUEST CLASS DIAGRAM
+![Request Class Diagram](docs/request-class-diagram.png)
 ```mermaid
 classDiagram
 class Request {
@@ -132,6 +137,7 @@ Request ..> RequestStatus
 ```
 
 ### GAME CLASS DIAGRAM
+![Game Class Diagram](docs/game-class-diagram.png)
 ```mermaid
 classDiagram
 class Game {
@@ -146,10 +152,11 @@ class Game {
 }
 ```
 
-### HTML JS INTERFACE CLASS DIAGRAM
+### USER INTERFACE CLASS DIAGRAM
+![User Interface Class Diagram](docs/user-interface-class-diagram.png)
 ```mermaid
 classDiagram
-class HtmlJsInterface {
+class UserInterface {
     <<service>>
 
     CreateNewPlayer()
